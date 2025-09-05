@@ -1,4 +1,7 @@
 function hideElements() {
+
+    if (!path.startsWith("/problems/") || !path.startsWith("/problemset/")) return;
+
     // Problemset page difficulty
     document.querySelectorAll('.text-sd-easy, .text-sd-medium, .text-sd-hard')
         .forEach(el => el.style.display = "none");
