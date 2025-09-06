@@ -1,6 +1,7 @@
 function hideElements() {
+    const path = window.location.pathname;
 
-    if (!path.startsWith("/problems/") || !path.startsWith("/problemset/")) return;
+    if (!path.startsWith("/problems/") && !path.startsWith("/problemset/")) return;
 
     // Problemset page difficulty
     document.querySelectorAll('.text-sd-easy, .text-sd-medium, .text-sd-hard')
